@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran & Acara - Museum Basoeki Abdullah</title>
+    <!-- Fonts: Playfair Display for headings, Open Sans for text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for back-to-top arrow icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- jQuery, React, ReactDOM, and Babel for JSX -->
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.24.7/babel.min.js"></script>
+<!-- React dan ReactDOM -->
+<script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Script lokal (HARUS type="text/babel" agar JSX diproses) -->
+<script type="text/babel" src="exhibitions.js" defer></script>
+<link rel="stylesheet" href="StylesExhibit.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="nav-left">
+            <nav>
+                <a href="index.html">Beranda</a><span class="nav-separator">|</span>
+                <a href="visit.html">Kunjungi Museum</a><span class="nav-separator">|</span>
+                <a href="exhibitions.html">Pameran & Acara</a><span class="nav-separator">|</span>
+                <a href="collections.html">Jelajahi Koleksi</a>
+            </nav>
+        </div>
+        <div class="right-section">
+            <span class="operating-hours">Buka Hari Ini: 08:00 → 16:00</span>
+            <a href="https://www.traveloka.com" class="tickets-btn">Tiket</a>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Pameran & Acara</h1>
+        <p>Temukan pameran seni menarik dan acara budaya di Museum Basoeki Abdullah.</p>
+    </section>
+
+    <!-- Events section (rendered by React) -->
+    <section class="content-section">
+        <h2>Pameran & Acara Terkini</h2>
+        <div id="events-container" class="events-container"></div>
+    </section>
+
+    <!-- Back to Top button -->
+    <a href="#" class="back-to-top" title="Kembali ke Atas">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Museum Basoeki Abdullah</div>
+        <div class="social-media">
+            <h3>Ikuti Kami</h3>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.x.com" target="_blank">Twitter/X</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.tiktok.com" target="_blank">TikTok</a>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Masukkan email Anda" required>
+                <button type="submit">Berlangganan</button>
+            </form>
+        </div>
+        <p>© 2025 Museum Basoeki Abdullah. Hak cipta dilindungi.</p>
+    </footer>
+
+</body>
+</html>
